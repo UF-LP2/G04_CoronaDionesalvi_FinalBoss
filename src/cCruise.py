@@ -8,7 +8,8 @@ class cCruise(cShip):
 		
 	def calcularPeso(self):
 		total = self.draft - self.crew * 1.5 # el total seria el peso neto del barco 
-		
+		aux = 0
+
 		aux = self.passengers * 2.25 	# 2.25 de mis pasajeros
 		total -= aux
 		
