@@ -1,5 +1,5 @@
 from cShip import cShip
-# cCruise es hijp de cShip
+# cCruise es hija de cShip
 class cCruise(cShip):
 	def __init__(self, passengers, draft, crew): 
 		super().__init__(draft, crew) # usando super se hereda automaticamente los metodos del padre.
@@ -7,8 +7,8 @@ class cCruise(cShip):
 		self.passengers = passengers # cantidad de pasajeros
 		
 	def calcularPeso(self):
-		total = self.draft - self.crew * 1.5 # el total seria el peso neto del barco 
-		aux = 0
+		float(total = self.draft - (self.crew * 1.5)) # el total seria el peso neto del barco 
+		float(aux = 0.0)
 
 		aux = self.passengers * 2.25 	# 2.25 de mis pasajeros
 		total -= aux
