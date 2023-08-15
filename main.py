@@ -5,20 +5,20 @@ from src.ships import Cargo
 from src.ships import Cruise
 
 
-def esNumero(n):
-        try:
-		            float(n)
-                return True
-	      except TypeError:
-		            return False
+def esNumero(n): 
+	try:
+		float(n)
+		return True
+	except TypeError:
+		return False
 	  
 
 def main() -> None:
 
-lista_de_barcos = [] 
+	lista_de_barcos = [] 	
 
 	# la r es de read, solo lectura
-with open('ships.csv','r') as archivoBarcos:
+	with open('ships.csv','r') as archivoBarcos:
 		lectorBarcos = csv.reader(archivoBarcos)
 
 		
